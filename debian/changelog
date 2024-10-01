@@ -1,5 +1,6 @@
-golang-github-swaggo-files (1.0.1-1) UNRELEASED; urgency=medium
+golang-github-swaggo-files (1.0.1-2) UNRELEASED; urgency=medium
 
   * Initial release (Closes: TODO)
+  * fix source format
 
- -- lynx <neolynx@gmail.com>  Tue, 01 Oct 2024 15:31:35 +0200
+ -- lynx <neolynx@gmail.com>  Tue, 01 Oct 2024 15:33:41 +0200
