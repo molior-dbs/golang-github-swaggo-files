@@ -1,0 +1,38 @@
+Source: golang-github-swaggo-files
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: lynx <TODO>
+Section: golang
+Testsuite: autopkgtest-pkg-go
+Priority: optional
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-golang-x-net-dev
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-swaggo-files
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-swaggo-files.git
+Homepage: https://github.com/swaggo/files
+Rules-Requires-Root: no
+XS-Go-Import-Path: github.com/swaggo/files
+
+Package: golang-github-swaggo-files-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: golang-golang-x-net-dev,
+         ${misc:Depends}
+Description:  (library)
+ swaggerFiles
+ .
+ Build Status (https://github.com/features/actions) Go Report Card
+ (https://goreportcard.com/report/github.com/swaggo/files)
+ .
+ How to update submodule and create a new bundle:
+ .
+   # Update submodule to latest tagged release of swagger-ui
+   make update-submodule
+ .
+   # Create new dist bundle
+   make build
+ .
+ You can now create a commit and push changes to GitHub
+
